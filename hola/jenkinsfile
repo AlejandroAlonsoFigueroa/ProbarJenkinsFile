@@ -13,4 +13,18 @@ pipeline {
             }
         }
     }
+    
+    post{
+    
+        always{
+            echo 'Como sea me ejecuto'
+        }
+        
+        success{
+            echo 'Todo salió bien'
+        }
+        failure{
+            echo 'Algo falló'
+        }
+    }
 }
